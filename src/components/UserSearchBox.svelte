@@ -12,7 +12,7 @@
   let response: any;
 
   function updateResponse() {
-    fetch("https://godsusersearch.dallas.workers.dev?username=" + input)
+    fetch("https://godsapi.dallas.workers.dev/user/id?username=" + input)
       .then((response) => response.json())
       .then((data) => {
         response = data;
